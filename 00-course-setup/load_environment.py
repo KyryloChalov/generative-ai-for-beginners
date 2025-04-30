@@ -44,6 +44,7 @@ else:
 # import os
 import subprocess
 
+
 def get_git_info():
     try:
         # Отримати шлях до репозиторію
@@ -67,6 +68,7 @@ def get_git_info():
     except subprocess.CalledProcessError as e:
         print("Error:", e)
         return None
+
 
 # Виклик функції
 git_info = get_git_info()
